@@ -1,0 +1,45 @@
+{% extends 'app/home2.html' %}
+{% load static %}
+{% block banner_slide %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'tailieu/images/banner/b7.jpg' %}" class="d-block w-100" alt="..." height="300">
+        {% comment %} <div class="carousel-caption d-none d-md-block bg-success text-White">
+          <h5>Iphone 14pro max đang sale</h5>
+          <p>Sẩn phẩm mới nhất của nhà táo với nhiều tính năng độc đáo</p>
+        </div> {% endcomment %}
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'tailieu/images/banner/b8.jpg' %}" class="d-block w-100" alt="..." height="300">
+        {% comment %} <div class="carousel-caption d-none d-md-block bg-success text-White">
+          <h5>Laptop bán chạy nhất trong tháng</h5>
+          <p>Được nhiều người tin dùng và sử dụng</p>
+        </div> {% endcomment %}
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'tailieu/images/banner/b5.jpg' %}" class="d-block w-100" alt="..." height="300">
+        {% comment %} <div class="carousel-caption d-none d-md-block bg-success text-White">
+          <h5>điện thoại mới được sam sung công bố</h5>
+          <p>Có nhiều tính năng vượt trội</p>
+        </div> {% endcomment %}
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock banner_slide %}
+{% block main-content %}
+nguyễn Ngọc Toán
+{% endblock main-content %}
